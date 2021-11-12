@@ -11,7 +11,6 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Data
 public class User {
     @Id
@@ -23,5 +22,5 @@ public class User {
     private String phoneNumber;
     private String address;
     private boolean advertising_allow;
-    
+
 }
