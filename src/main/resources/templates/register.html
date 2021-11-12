@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>RegisterForm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Coupang</h1>
+        <form th:action="@{/register}" method="post" th:object="${userDto}">
+            회원정보를 입력해주세요<br>
+            <input type="email" th:field="*{email}" name="id" placeholder="아이디(이메일)"><br>
+            <input type="password" th:field="*{password}" name="password" placeholder="비밀번호"><br>
+            <input type="password" name="re_password" placeholder="비밀번호 확인"><br>
+            <input type="text" th:field="*{name}" name="name" placeholder="이름"><br>
+            <input type="tel" th:field="*{phoneNumber}" name="phone_number" placeholder="휴대폰 번호"><br>
+            <p>쿠팡 서비스 약관에 동의해주세요</p>
+            모두 동의합니다 <input th:field="*{advertising_allow}" type="checkbox" name="advertising_allow">
+            <p>동의에는 필수 및 선택 목적(광고성 정보 수신 포함)에 대한 동의가 포함되어 있으며, 선택 목적의 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.</p>
+            <button type="submit">동의하고 가입하기</button>
+        </form>
+    </div>
+</body>
+</html>
