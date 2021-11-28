@@ -1,4 +1,4 @@
-package com.clonecoding.coupang.controller;
+package com.clonecoding.coupang.controller.user;
 
 import com.clonecoding.coupang.dto.UserCreateDto;
 import com.clonecoding.coupang.dto.UserDto;

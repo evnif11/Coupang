@@ -1,4 +1,4 @@
-package com.clonecoding.coupang.controller;
+package com.clonecoding.coupang.controller.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
